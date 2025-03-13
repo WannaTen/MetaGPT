@@ -5,9 +5,9 @@ from typing import Literal
 
 from pydantic import Field, model_validator
 
-# from metagpt.actions.di.ask_review import ReviewConst
-from metagpt.actions.di.execute_nb_code import ExecuteNbCode
-from metagpt.actions.di.write_analysis_code import CheckData, WriteAnalysisCode
+# from metagpt.actions.ask_review import ReviewConst
+from metagpt.actions.execute_nb_code import ExecuteNbCode
+from metagpt.actions.write_analysis_code import CheckData, WriteAnalysisCode
 from metagpt.logs import logger
 from metagpt.prompts.di.write_analysis_code import DATA_INFO
 from metagpt.roles import Role

@@ -7,7 +7,7 @@ from metagpt.roles.di.data_interpreter import DataInterpreter
 @pytest.mark.asyncio
 @pytest.mark.parametrize("auto_run", [(True), (False)])
 async def test_interpreter(mocker, auto_run):
-    mocker.patch("metagpt.actions.di.execute_nb_code.ExecuteNbCode.run", return_value=("a successful run", True))
+    mocker.patch("metagpt.actions.execute_nb_code.ExecuteNbCode.run", return_value=("a successful run", True))
     mocker.patch("builtins.input", return_value="confirm")
 
     requirement = "Run data analysis on sklearn Wine recognition dataset, include a plot, and train a model to predict wine class (20% as validation), and show validation accuracy."
@@ -24,7 +24,7 @@ async def test_interpreter(mocker, auto_run):
 
 @pytest.mark.asyncio
 async def test_interpreter_react_mode(mocker):
-    mocker.patch("metagpt.actions.di.execute_nb_code.ExecuteNbCode.run", return_value=("a successful run", True))
+    mocker.patch("metagpt.actions.execute_nb_code.ExecuteNbCode.run", return_value=("a successful run", True))
 
     requirement = "Run data analysis on sklearn Wine recognition dataset, include a plot, and train a model to predict wine class (20% as validation), and show validation accuracy."
 

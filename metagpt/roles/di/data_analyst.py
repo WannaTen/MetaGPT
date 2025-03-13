@@ -4,8 +4,8 @@ from typing import Annotated
 
 from pydantic import Field, model_validator
 
-from metagpt.actions.di.execute_nb_code import ExecuteNbCode
-from metagpt.actions.di.write_analysis_code import CheckData, WriteAnalysisCode
+from metagpt.actions.execute_nb_code import ExecuteNbCode
+from metagpt.actions.write_analysis_code import CheckData, WriteAnalysisCode
 from metagpt.logs import logger
 from metagpt.prompts.di.data_analyst import (
     CODE_STATUS,

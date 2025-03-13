@@ -10,7 +10,7 @@ from typing import Annotated, Callable, Dict, List, Literal, Optional, Tuple
 from pydantic import Field, model_validator
 
 from metagpt.actions import Action, UserRequirement
-from metagpt.actions.di.run_command import RunCommand
+from metagpt.actions.run_command import RunCommand
 from metagpt.actions.search_enhanced_qa import SearchEnhancedQA
 from metagpt.const import IMAGES
 from metagpt.exp_pool import exp_cache

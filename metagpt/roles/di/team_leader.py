@@ -4,7 +4,7 @@ from typing import Annotated
 
 from pydantic import Field
 
-from metagpt.actions.di.run_command import RunCommand
+from metagpt.actions.run_command import RunCommand
 from metagpt.const import TEAMLEADER_NAME
 from metagpt.prompts.di.role_zero import QUICK_THINK_TAG
 from metagpt.prompts.di.team_leader import (
